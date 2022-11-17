@@ -22,7 +22,7 @@ def xmlFormatter():
         else:
             tag += file[tmp]
             tmp += 1
-    print(tags)
+            
     xml_file = open('xml.txt', 'w', encoding='utf-8')
     for i in tags:
         if re.match(r'<schedule', i):
