@@ -16,7 +16,7 @@ def xmlFormatter():
     while len(file) != 0:
         if file[tmp] == '>':
             tags.append(tag + '>')
-            file = file[tmp + 1:]
+            file = file[tmp + 1:].strip()
             tag = ''
             tmp = 0
         else:
