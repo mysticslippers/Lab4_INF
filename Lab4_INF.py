@@ -8,7 +8,7 @@
 
 def xmlFormatter():
     import re
-    file = open('xml2.txt', encoding='utf-8').readline()
+    file = open('xml2.txt', encoding='utf-8').readline().strip()
     tags = []
     tag = ''
     tmp = 0
